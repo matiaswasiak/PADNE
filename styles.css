@@ -180,3 +180,48 @@ header.sticky ul li a:hover {
   background: rgba(255, 255, 255, 1);
   border: 0 solid #1d212b;
 }
+
+/* FOOTER SECTION */
+
+footer {
+  background-color: #1d212b;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  color: wheat;
+}
+
+.columns strong {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.column-one,
+.column-two,
+.column-three {
+  text-align: center;
+  padding: 10px;
+  line-height: 34px;
+}
+
+.column-two {
+  font-size: 23px;
+}
+
+.copyright {
+  color: wheat;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.social-media {
+  padding-top: 28px;
+  font-size: 30px;
+  text-align: center;
+}
