@@ -7,8 +7,13 @@
     <title>PARRILA DON ENRIQUE</title>
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat: 400,500,700,800"
+      href="https://fonts.googleapis.com/css?family=Montserrat: 200,400,500,700,800"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -30,9 +35,54 @@
         </li>
       </ul>
     </header>
-    <section class="banner"></section>
+
+    <!-- SLIDER SECTION -->
+    <div
+      class="main-carousel"
+      data-flickity='{ 
+        "cellAlign": "left",
+        "contain": true,
+        "autoPlay": true,
+        "pauseAutoPlayOnHover": true
+      }'
+    >
+      <div
+        class="carousel-cell"
+        style="background-image: url(/assets/mountains-6062271_1920.jpg)"
+      >
+        <div class="overlay"></div>
+        <div class="inner">
+          <h3 class="subtitle">Slide 1</h3>
+          <h2 class="title">Flickity parallax</h2>
+          <a href="#" class="btn">Tell me more</a>
+        </div>
+      </div>
+      <div
+        class="carousel-cell"
+        style="background-image: url(/assets/mountains-6062271_1920.jpg)"
+      >
+        <div class="overlay"></div>
+        <div class="inner">
+          <h3 class="subtitle">Slide 1</h3>
+          <h2 class="title">Flickity parallax</h2>
+          <a href="#" class="btn">Tell me more</a>
+        </div>
+      </div>
+      <div
+        class="carousel-cell"
+        style="background-image: url(/assets/mountains-6062271_1920.jpg)"
+      >
+        <div class="overlay"></div>
+        <div class="inner">
+          <h3 class="subtitle">Slide 1</h3>
+          <h2 class="title">Flickity parallax</h2>
+          <a href="#" class="btn">Tell me more</a>
+        </div>
+      </div>
+    </div>
 
     <!-- JAVASCRIPT SECTION -->
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

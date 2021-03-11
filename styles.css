@@ -10,23 +10,21 @@
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: #000;
-  min-height: 200vh;
-}
-
 /* NAVIGATION SECTION */
 
 header {
+  background-color: #1d212b;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 50px;
+  padding: 40px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: 0.6s;
-  padding: 40px 100px;
+  z-index: 1001;
 }
 
 header.sticky {
@@ -70,16 +68,6 @@ header ul li a:hover {
   color: grey;
 }
 
-.banner {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
-    url("https://i.pinimg.com/originals/7f/8f/85/7f8f851b8707cdbacf4ae1e65b095510.jpg");
-  object-fit: contain;
-  z-index: -1;
-}
-
 header.sticky .logo,
 header.sticky ul li a {
   color: #000;
@@ -87,4 +75,108 @@ header.sticky ul li a {
 
 header.sticky ul li a:hover {
   color: grey;
+}
+
+/* SLIDER SECTION */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(14, 29, 51, 0.8),
+    rgba(14, 29, 51, 0.2)
+  );
+}
+
+.main-carousel {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-carousel .carousel-cell {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-carousel .carousel-cell .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.main-carousel .carousel-cell .inner .subtitle {
+  font-size: 20px;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.main-carousel .carousel-cell .inner .title {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.main-carousel .carousel-cell .inner .btn {
+  border: 1px solid #fff;
+  padding: 14px 18px;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.main-carousel .carousel-cell .inner .btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.main-carousel .flickity-prev-next-button {
+  width: 80px;
+  height: 80px;
+  background: transparent;
+}
+
+.main-carousel .flickity-prev-next-button:hover {
+  background: transparent;
+}
+
+.main-carousel .flickity-prev-next-button .arrow {
+  fill: white;
+}
+
+.main-carousel .flickity-page-dots {
+  bottom: 30px;
+}
+
+.main-carousel .flickity-page-dots .dot {
+  width: 30px;
+  height: 4px;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.5);
+  border: 0 solid white;
+  border-radius: 0;
+}
+
+.main-carousel .flickity-page-dots .dot.is-selected {
+  background: rgba(255, 255, 255, 1);
+  border: 0 solid #1d212b;
 }
