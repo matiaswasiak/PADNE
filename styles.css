@@ -78,6 +78,7 @@ header.sticky ul li a:hover {
 }
 
 /* SLIDER SECTION */
+
 .overlay {
   position: absolute;
   width: 100%;
@@ -179,6 +180,33 @@ header.sticky ul li a:hover {
 .main-carousel .flickity-page-dots .dot.is-selected {
   background: rgba(255, 255, 255, 1);
   border: 0 solid #1d212b;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8e8e8;
+  height: 40vh;
+  padding: 0 20%;
+}
+
+.content_about h2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.content_about p {
+  text-align: center;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
 }
 
 /* FOOTER SECTION */
