@@ -247,71 +247,6 @@ header.sticky ul li a:hover {
   background-color: #e7b339;
 }
 
-/* EVENT SECTION */
-
-.event {
-  height: 80vh;
-  background-color: rgb(32, 28, 28);
-  text-align: center;
-  padding: 0 20%;
-  padding-top: 40px;
-}
-
-.event-title h3 {
-  color: #e7b339;
-  text-transform: capitalize;
-  font-size: 30px;
-}
-
-.event-title h2 {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 56px;
-}
-
-.event-content {
-  height: 60vh;
-  display: flex;
-  padding: 50px;
-}
-
-.event-card img {
-  display: inline-block;
-  position: relative;
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.event-card p {
-  padding: 50px 30px;
-  text-align: center;
-  letter-spacing: 1.5px;
-  line-height: 1.5;
-}
-
-.event-card:last-child {
-  border-left: 1px solid green;
-}
-
-.event-card button {
-  border: 1px solid #fff;
-  background-color: transparent;
-  padding: 14px 18px;
-  text-transform: uppercase;
-  font-size: 15px;
-  letter-spacing: 3px;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.event-card button:hover {
-  background-color: red;
-  color: #000;
-}
-
 /* CONTACT SECTION */
 .contact {
   position: relative;
@@ -322,12 +257,7 @@ header.sticky ul li a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(
-    180deg,
-    rgb(119, 20, 23) 0%,
-    rgb(119, 20, 23) 0%,
-    rgba(16, 16, 16, 1) 94%
-  );
+  background: linear-gradient(180deg, #e7b339 0%, #1d212b 100%);
 }
 
 .contact_content {
@@ -493,7 +423,7 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  color: wheat;
+  color: #fff;
 }
 
 .columns strong {
@@ -515,7 +445,7 @@ footer {
 }
 
 .copyright {
-  color: wheat;
+  color: #fff;
   display: flex;
   justify-content: space-around;
   text-align: center;
